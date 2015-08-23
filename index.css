@@ -1,0 +1,258 @@
+* {
+  box-sizing: border-box;
+}
+.center {
+  margin: 0 auto;
+}
+.fold {
+  min-height: 100vh;
+  padding: 10px;
+}
+.divide {
+  height: 10px;
+  width: 100%;
+  background: black;
+}
+.social {
+  padding: 20px;
+  background: black;
+  background: rgba(255, 255, 255, 0.5);
+  display: inline;
+  border-radius: 5px;
+  margin: 10px;
+  transition: all 0.5s ease-in-out;
+}
+.social a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+.social:hover {
+  padding: 25px;
+  margin: 5px;
+  box-shadow: 1px 10px 5px #000;
+  background: rgba(255, 0, 0, 0.5)
+}
+.navbar {
+  z-index: 9000;
+  background: black;
+  background: rgba(0, 0, 0, 0.5);
+}
+.nav-left {
+  background: red;
+  background: rgba(255, 0, 0, 0.5)
+}
+.navbar div:last-child {
+  text-align: center;
+}
+.link a:hover {
+  background: rgba(255, 0, 0, 0.8) !important;
+}
+.navbar div ul {
+  float: right;
+}
+.navbar div a {
+  color: #BBB;
+}
+.navbar div a:hover {
+  text-decoration: none;
+}
+.home {
+  padding-top: 25%;
+  background: url(http://i.imgur.com/QORXQpS.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.home h2,
+.home h4 {
+  color: #FFF;
+  text-shadow: 0px 0px 0px #000;
+}
+.home h2 {
+  font-size: 5em;
+}
+.home h4 {
+  font-size: 2em;
+}
+.home .center {
+  width: 90%;
+  text-align: center;
+}
+.home ul {
+  padding: 0;
+  height: 50px;
+  list-style-type: none;
+  width: 90%;
+  margin: 50px auto;
+}
+.about {
+  padding-top: 50px;
+  font-size: 1.5em;
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/c/ce/Sony_Center_Berlin_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.about div:first-child {
+  width: 45%;
+  min-height: 100vh;
+  padding: 10px;
+  background: #000;
+  background: rgba(0, 0, 0, 0.5);
+}
+.about ul {
+  list-style-type: none;
+}
+.about ul li:before {
+  font-family: "FontAwesome";
+  content: '\f061';
+  margin: 0 5px;
+}
+.about ul li ul li:before {
+  content: '\f120'
+}
+.profile {
+  width: 45%;
+  float: left;
+  margin-right: 5%;
+  margin-top: 10%;
+  background: none;
+}
+.portfolio {
+  padding-top: 10%;
+  background: url(http://img12.deviantart.net/99d3/i/2014/092/4/7/blue_future_by_recycledrelatives-d7csyh1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.portfolio > h2,
+.portfolio > p {
+  text-align: center;
+  color: white;
+  font-size: 4em;
+  text-shadow: 1px 1px 1px #000;
+  text-shadow: 5px 5px 5px #F00;
+}
+.portfolio > p {
+  font-size: 2em;
+  text-shadow: none;
+}
+.portfolio > p a {
+  color: white;
+  text-shadow: 5px 5px 5px red, -5px -5px 5px red, 5px -5px 5px red, -5px 5px 5px red, 1px 1px 1px white, -1px -1px 1px white, 1px -1px 1px white, -1px 1px 1px white;
+}
+.portfolio .center {
+  padding-top: 5px;
+  padding-left: 50px;
+  min-height: 530px;
+  margin-bottom: 25px;
+  /*background: rgba(0,0,0,0.5);*/
+}
+.thumb {
+  width: 30%;
+  float: left;
+  height: 250px;
+  margin: 5px;
+  border-radius: 25px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  border-radius: none;
+}
+a .thumb {
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease;
+  border-radius: 25px;
+}
+.overlay p {
+  padding-top: 55%;
+}
+.overlay:hover {
+  background: rgba(0, 0, 0, 0);
+  color: transparent;
+  text-shadow: none;
+}
+.contact {
+  padding-top: 150px;
+  text-align: center;
+  background: url(http://i.imgur.com/98wtnyo.jpgw);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.contact h3 {
+  font-size: 2.5em;
+  color: white;
+  margin: 25px;
+}
+.contact p a {
+  font-size: 1.5em;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 1px #000;
+}
+.contact ul li a {
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+}
+footer {
+  background: black;
+  text-align: center;
+}
+.footerlinks li {
+  display: inline;
+}
+@media screen and (max-width: 790px) {
+  .nav-left {
+    float: none;
+  }
+  .nav-right {
+    width: 90%;
+    float: none;
+    margin: 0 auto;
+  }
+  .nav-right ul {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .nav-right li {
+    display: inline;
+  }
+  .nav-right a {
+    display: inline !important;
+  }
+  .navbar {
+    padding-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1020px) {
+  .overlay {
+    margin-top: -20px;
+  }
+  .overlay p {
+    padding-top: 45%;
+  }
+  .thumb {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 480px) {
+  .nav-left {
+    text-align: center;
+  }
+}

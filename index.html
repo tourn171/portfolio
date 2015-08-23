@@ -1,0 +1,113 @@
+<html ng-app="portApp">
+
+<head>
+  <meta charset="utf-8">
+  <title>Brett Flanders | Developer</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="navbar navbar-fixed-top">
+    <div class="nav-left navbar-brand"><a href="">Brett Flanders</a></div>
+    <div class="nav-right">
+      <ul class="nav navbar-nav">
+        <li class="link"><a href="#home">Home</a></li>
+        <li class="link"><a href="#about">About</a></li>
+        <li class="link"><a href="#portfolio">Portfolio</a></li>
+        <li class="link"><a href="#contact">Contact</a></li>
+
+      </ul>
+    </div>
+  </div>
+  <!-- end navbar -->
+  <div class="fold home container-fluid" id="home">
+    <div class="center">
+      <h2>The developer you're looking for</h2>
+      <h4>Building the Software of the Future</h4>
+      <ul>
+        <li class="btn social"><a href="www.freecodecamp.com/tourn171"><i class="fa fa-fire"></i> Free Code Camp</a></li>
+        <li class="btn social"><a href="http://codepen.io/tourn171/"><i class="fa fa-codepen"></i> Codepen</a></li>
+        <li class="btn social"><a href="https://github.com/tourn171"><i class="fa fa-github"></i> Github</a></li>
+        <li class="btn social"><a href="https://www.linkedin.com/pub/brett-flanders/a5/69b/868"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="divide"></div>
+  <div class="fold about container-fluid" id="about">
+    <div class="pull-left">
+      <h2>Who am I?</h2>
+      <p>I am a self taught programmer from Kansas, USA. Since 2013 I have dived head first into coding and found it an absolute joy. I love to learn and work in both old and new technologies. Now I want to build for you.</p>
+      <ul>
+        <li>Languages and Frameworks
+          <ul>
+            <li>HTML/5</li>
+            <li>CSS/3</li>
+            <li>Javascript</li>
+            <li>JQuery</li>
+            <li>AngularJs</li>
+            <li>Bootstrap</li>
+            <li>Ruby</li>
+            <li>Python</li>
+            <li>PHP</li>
+          </ul>
+        </li>
+        <li> Technologies
+          <ul>
+            <li>Git / Github</li>
+            <li>Responsive Design</li>
+            <li>Agile Development</li>
+            <li>TDD</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="pull-right profile">
+      <img class="img-responsive img-circle" alt="profile photo" src="https://avatars3.githubusercontent.com/u/7043044?v=3&s=460" />
+    </div>
+  </div>
+  <!-- end about -->
+  <div class="divide"></div>
+  <div class="fold portfolio" id="portfolio" ng-controller="projectsCtrl">
+    <h2>Select Projects</h2>
+    <div class="center">
+      <a ng-href="{{thumb.url}}" ng-repeat="thumb in thumbs">
+        <div class="thumb" ng-style="{'background-image':'url('+thumb.img+')'}">
+          <div class="overlay">
+            <h2>{{thumb.title}}</h2>
+            <p>{{thumb.description}}</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <p>All Free Code Camp Front End projects
+      <a href="http://tourn171.github.io/FCC-Ziplines/index.html">here</a></p>
+  </div>
+  <div class="divide">Nice Disolve</div>
+  <div class="fold contact" id="contact">
+    <h3>Have a project for me. Want a quote. Email me</h3>
+    <p class="btn social"><a href="mailto:tourn171@gmail.com">tourn171@gmail.com</a></p>
+    <h3>Or find me on one of these social networks</h3>
+    <ul>
+      <li class="btn social"><a href="www.freecodecamp.com/tourn171"><i class="fa fa-fire"></i> Free Code Camp</a></li>
+      <li class="btn social"><a href="http://codepen.io/tourn171/"><i class="fa fa-codepen"></i> Codepen</a></li>
+      <li class="btn social"><a href="https://github.com/tourn171"><i class="fa fa-github"></i> Github</a></li>
+      <li class="btn social"><a href="https://www.linkedin.com/pub/brett-flanders/a5/69b/868"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+    </ul>
+  </div>
+  <footer>
+    <ul class="footerlinks">
+      <li><a href="#home">Top |</a></li>
+      <li><a href="#about">About |</a></li>
+      <li><a href="#portfolio">Portfolio |</a></li>
+      <li><a href="#contact">Contact </a></li>
+    </ul>
+    &copy 2015 Brett Flanders
+  </footer>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
